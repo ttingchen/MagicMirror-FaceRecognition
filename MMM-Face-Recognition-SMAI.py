@@ -25,8 +25,6 @@ camera = picamera.PiCamera()
 camera.resolution = (320, 240)
 output = np.empty((240, 320, 3), dtype=np.uint8)
 
-#Initialize 'currentname' to trigger only when a new person is identified.
-currentname = "unknown"
 #Determine faces from encodings.pickle file model created from train_model.py
 encodingsP = "encodings.pickle"
 
@@ -36,9 +34,9 @@ print("[INFO] loading encodings + face detector...")
 data = pickle.loads(open(encodingsP, "rb").read(), encoding="latin1")
 
 # Load a sample picture and learn how to recognize it.
-print("Loading known face image(s)")
-rec_image = face_recognition.load_image_file("/home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/public/face.png")
-rec_face_encoding = face_recognition.face_encodings(rec_image)[0]
+# print("Loading known face image(s)")
+# rec_image = face_recognition.load_image_file("/home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/public/face.png")
+# rec_face_encoding = face_recognition.face_encodings(rec_image)[0]
 
 # Initialize some variables
 face_locations = []
@@ -50,9 +48,11 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind((HOST, PORT))
     s.listen()
     client, clientInfo = s.accept()
+    print("server recv from: ", clientInfo)
+    print("message: ", client.recv(1024) )
+
     try:
         while 1:
-
             print("Capturing image.")
             # Grab a single frame of video from the RPi camera as a numpy array
             camera.capture(output, format="rgb")
@@ -62,15 +62,16 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             print("Found {} faces in image.".format(len(face_locations)))
             face_encodings = face_recognition.face_encodings(output, face_locations)
             names = []
-            face_id = "Guest"
+            face_id = "NoOne"
             curtime = time.ctime(time.time())
+            name = ""
 
             # loop over the facial embeddings
             for encoding in face_encodings:
                 # attempt to match each face in the input image to our known
                 # encodings
                 matches = face_recognition.compare_faces(data["encodings"],
-                    encoding)
+                    encoding, 0.5)
                 name = "Unknown" #if face is not recognized, then print Unknown
 
                 # check to see if we have found a match
@@ -91,25 +92,23 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                     # of votes (note: in the event of an unlikely tie Python
                     # will select first entry in the dictionary)
                     name = max(counts, key=counts.get)
-
                     curtime = time.ctime(time.time())
 
-                    #If someone in your dataset is identified, print their name on the screen
-                    if currentname != name:
-                        currentname = name
-                        print(currentname)
-
-                # update the list of names
-                # names.append(name)
-                face_id=currentname
+                face_id=name
                 print(curtime,name)
-                time.sleep(10)
-            f = open("/home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/sample.txt", "w")
-            f.write(face_id)
-            f.close()
+                
 
-            if face_id != "Guest":
-                client.send(face_id.encode()) # Echo back to client
+            if name != "":
+                f = open("/home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/sample.txt", "w")
+                f.write(face_id)
+                f.close()
+                result = {
+                    "timestamp": curtime, 
+                    "name": name,
+                }
+                pidata = json.dumps(result)  
+                client.sendall(bytes(pidata,encoding="utf-8")) 
+                time.sleep(30)
     except: 
         print("Closing socket")
         client.close()

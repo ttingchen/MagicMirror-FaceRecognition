@@ -3,7 +3,8 @@ Module.register("MMM-Face-Recognition-SMAI", {
 
 defaults: {
   prompt: "Use FaceID to access profiles",
-  fileUrl: "modules/MMM-Face-Recognition-SMAI/public/face.png",
+  fileUrl: "modules/MMM-Face-Recognition-SMAI/public/Kaylin-id.png",
+  rubyfileUrl: "modules/MMM-Face-Recognition-SMAI/public/Ruby-id.png",
   width: "200px",
   position: "left",
   refreshInterval: 2
@@ -59,7 +60,11 @@ socketNotificationReceived: function(notification, payload) {
     
 
     var img = document.createElement("img");
-    img.setAttribute('src', this.config.fileUrl);
+    if (payload=="Ruby"){
+        img.setAttribute('src', this.config.rubyfileUrl);
+    } else {
+        img.setAttribute('src', this.config.fileUrl);
+    }
     elem.appendChild(img);
     return elem
        

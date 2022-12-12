@@ -29,21 +29,22 @@ module.exports = NodeHelper.create({
           // Try it where we expect a match
           const checker = value =>
           ['-id.png'].some(element => value.includes(element));
-          face_name_id = datadir.filter(checker)[0];
-          
-          
-          face_name_id = face_name_id.split("-")
-          face_name_display = face_name_id[0];
-          
-           if(face_rec_name == face_name_display)
-          {
-            console.log(face_name_display);
-            this.sendSocketNotification("I_DID", face_rec_name)
-          }else
-          {
+          face_name_ids = datadir.filter(checker);
+          sent=0
+
+          for(i in face_name_ids){
+            face_name_id = face_name_ids[i].split("-")
+            face_name_display = face_name_id[0];
+            if(face_rec_name == face_name_display)
+            {
+              // console.log(face_name_display);
+              this.sendSocketNotification("I_DID", face_rec_name)
+              sent=1
+            }
+          }
+          if(sent==0){
             this.sendSocketNotification("I_NOT", face_rec_name)
           }
-          
       });
         break
     }

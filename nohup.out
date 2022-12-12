@@ -1,0 +1,666 @@
+
+> magicmirror@2.21.0 start
+> DISPLAY="${DISPLAY:=:0}" ./node_modules/.bin/electron js/electron.js
+
+[11.12.2022 16:01.26.422] [LOG]   Starting MagicMirror: v2.21.0
+[11.12.2022 16:01.26.430] [LOG]   Loading config ...
+[11.12.2022 16:01.26.438] [LOG]   Loading module helpers ...
+[11.12.2022 16:01.26.441] [LOG]   No helper found for module: alert.
+[11.12.2022 16:01.26.460] [LOG]   Initializing new module helper ...
+[11.12.2022 16:01.26.461] [LOG]   Module helper loaded: updatenotification
+[11.12.2022 16:01.26.463] [LOG]   No helper found for module: clock.
+[11.12.2022 16:01.26.706] [LOG]   Initializing new module helper ...
+[11.12.2022 16:01.26.708] [LOG]   Module helper loaded: calendar
+[11.12.2022 16:01.26.709] [LOG]   No helper found for module: compliments.
+[11.12.2022 16:01.26.711] [LOG]   No helper found for module: weather.
+[11.12.2022 16:01.26.735] [LOG]   Initializing new module helper ...
+[11.12.2022 16:01.26.736] [LOG]   Module helper loaded: newsfeed
+[11.12.2022 16:01.26.739] [LOG]   Initializing new module helper ...
+[11.12.2022 16:01.26.740] [LOG]   Module helper loaded: MMM-Face-Recognition-SMAI
+[11.12.2022 16:01.26.740] [LOG]   All module helpers loaded.
+[11.12.2022 16:01.26.865] [LOG]   Starting server on port 8080 ... 
+[11.12.2022 16:01.26.882] [LOG]   Server started ...
+[11.12.2022 16:01.26.883] [LOG]   Connecting socket for: updatenotification
+[11.12.2022 16:01.26.884] [LOG]   Starting module helper: updatenotification
+[11.12.2022 16:01.26.885] [LOG]   Connecting socket for: calendar
+[11.12.2022 16:01.26.886] [LOG]   Starting node helper for: calendar
+[11.12.2022 16:01.26.887] [LOG]   Connecting socket for: newsfeed
+[11.12.2022 16:01.26.888] [LOG]   Starting node helper for: newsfeed
+[11.12.2022 16:01.26.889] [LOG]   Connecting socket for: MMM-Face-Recognition-SMAI
+[11.12.2022 16:01.26.890] [LOG]   Sockets connected & modules started ...
+[11.12.2022 16:01.27.253] [LOG]   Launching application.
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to open kms_swrast (search paths /usr/lib/arm-linux-gnueabihf/dri:\$${ORIGIN}/dri:/usr/lib/dri)
+failed to load driver: kms_swrast
+MESA-LOADER: failed to open swrast (search paths /usr/lib/arm-linux-gnueabihf/dri:\$${ORIGIN}/dri:/usr/lib/dri)
+failed to load swrast driver
+[11.12.2022 16:01.30.246] [LOG]   Create new calendarfetcher for url: http://www.calendarlabs.com/ical-calendar/ics/76/US_Holidays.ics - Interval: 300000
+[11.12.2022 16:01.30.289] [LOG]   Create new newsfetcher for url: https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml - Interval: 300000
+[11.12.2022 16:01.30.322] [INFO]  Checking git for module: MMM-Face-Recognition-SMAI
+[11.12.2022 16:01.30.366] [INFO]  Checking git for module: default
+[11.12.2022 16:01.31.067] [INFO]  Calendar-Fetcher: Broadcasting 17 events.
+[11.12.2022 16:01.31.082] [INFO]  Newsfeed-Fetcher: Broadcasting 25 items.
+[11.12.2022 16:01.31.216] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.31.222] [ERROR] ReferenceError: face_rec_name is not defined
+    at checker (/home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:31:12)
+    at Array.filter (<anonymous>)
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:32:34
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.31.224] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.31.228] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.31.236] [LOG]   Unknown
+[11.12.2022 16:01.32.183] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.32.186] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.32.188] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.32.190] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.32.194] [LOG]   Unknown
+[11.12.2022 16:01.33.179] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.33.180] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.33.182] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.33.183] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.33.184] [LOG]   Unknown
+[11.12.2022 16:01.34.177] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.34.178] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.34.179] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.34.180] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.34.181] [LOG]   Unknown
+[11.12.2022 16:01.35.177] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.35.178] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.35.179] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.35.180] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.35.181] [LOG]   Unknown
+[11.12.2022 16:01.36.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.36.180] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.36.182] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.36.183] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.36.186] [LOG]   Unknown
+[11.12.2022 16:01.37.179] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.37.182] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.37.184] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.37.186] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.37.189] [LOG]   Unknown
+[11.12.2022 16:01.38.179] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.38.181] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.38.183] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.38.184] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.38.187] [LOG]   Unknown
+[11.12.2022 16:01.39.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.39.179] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.39.180] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.39.181] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.39.183] [LOG]   Unknown
+[11.12.2022 16:01.40.179] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.40.181] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.40.184] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.40.185] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.40.189] [LOG]   Unknown
+[11.12.2022 16:01.41.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.41.180] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.41.182] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.41.183] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.41.186] [LOG]   Unknown
+[11.12.2022 16:01.42.181] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.42.186] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.42.188] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.42.189] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.42.193] [LOG]   Unknown
+[11.12.2022 16:01.43.181] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.43.185] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.43.187] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.43.189] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.43.193] [LOG]   Unknown
+[11.12.2022 16:01.44.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.44.180] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.44.182] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.44.183] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.44.186] [LOG]   Unknown
+[11.12.2022 16:01.45.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.45.180] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.45.182] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.45.184] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.45.187] [LOG]   Unknown
+[11.12.2022 16:01.46.177] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.46.180] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.46.181] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.46.181] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.46.183] [LOG]   Unknown
+[11.12.2022 16:01.47.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.47.179] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.47.180] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.47.181] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.47.183] [LOG]   Unknown
+[11.12.2022 16:01.48.176] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.48.177] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.48.178] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.48.179] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.48.180] [LOG]   Unknown
+[11.12.2022 16:01.49.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.49.180] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.49.181] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.49.182] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.49.185] [LOG]   Unknown
+[11.12.2022 16:01.50.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.50.180] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.50.181] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.50.182] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.50.184] [LOG]   Unknown
+[11.12.2022 16:01.51.179] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.51.183] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.51.185] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.51.186] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.51.189] [LOG]   Unknown
+[11.12.2022 16:01.52.181] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.52.184] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.52.187] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.52.188] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.52.192] [LOG]   Unknown
+[11.12.2022 16:01.53.180] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.53.182] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.53.184] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.53.185] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.53.188] [LOG]   Unknown
+[11.12.2022 16:01.54.176] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.54.177] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.54.178] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.54.179] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.54.180] [LOG]   Unknown
+[11.12.2022 16:01.55.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.55.180] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.55.181] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.55.182] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.55.184] [LOG]   Unknown
+[11.12.2022 16:01.56.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.56.179] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.56.180] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.56.181] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.56.183] [LOG]   Unknown
+[11.12.2022 16:01.57.177] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.57.178] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.57.179] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.57.180] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.57.181] [LOG]   Unknown
+[11.12.2022 16:01.58.179] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.58.180] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.58.182] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.58.183] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.58.186] [LOG]   Unknown
+[11.12.2022 16:01.59.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:01.59.180] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:01.59.181] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:01.59.182] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:01.59.184] [LOG]   Unknown
+[11.12.2022 16:02.00.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.00.179] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.00.180] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.00.181] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.00.182] [LOG]   Unknown
+[11.12.2022 16:02.01.181] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.01.184] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.01.186] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.01.190] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.01.197] [LOG]   Unknown
+[11.12.2022 16:02.02.180] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.02.183] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.02.185] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.02.186] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.02.189] [LOG]   Unknown
+[11.12.2022 16:02.03.180] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.03.183] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.03.186] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.03.187] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.03.190] [LOG]   Unknown
+[11.12.2022 16:02.04.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.04.180] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.04.182] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.04.184] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.04.187] [LOG]   Unknown
+[11.12.2022 16:02.05.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.05.179] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.05.180] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.05.181] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.05.184] [LOG]   Unknown
+[11.12.2022 16:02.06.177] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.06.179] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.06.180] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.06.181] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.06.183] [LOG]   Unknown
+[11.12.2022 16:02.07.179] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.07.180] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.07.181] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.07.182] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.07.185] [LOG]   Unknown
+[11.12.2022 16:02.08.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.08.179] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.08.181] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.08.182] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.08.184] [LOG]   Unknown
+[11.12.2022 16:02.09.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.09.181] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.09.183] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.09.184] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.09.187] [LOG]   Unknown
+[11.12.2022 16:02.10.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.10.180] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.10.182] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.10.183] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.10.185] [LOG]   Unknown
+[11.12.2022 16:02.11.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.11.180] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.11.181] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.11.182] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.11.185] [LOG]   Unknown
+[11.12.2022 16:02.12.181] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.12.185] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.12.187] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.12.190] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.12.195] [LOG]   Unknown
+[11.12.2022 16:02.13.180] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.13.182] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.13.183] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.13.184] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.13.187] [LOG]   Unknown
+[11.12.2022 16:02.14.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.14.180] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.14.181] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.14.182] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.14.185] [LOG]   Unknown
+[11.12.2022 16:02.15.177] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.15.183] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.15.184] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.15.185] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.15.188] [LOG]   Unknown
+[11.12.2022 16:02.16.176] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.16.177] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.16.178] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.16.179] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.16.180] [LOG]   Unknown
+[11.12.2022 16:02.17.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.17.179] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.17.180] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.17.181] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.17.184] [LOG]   Unknown
+[11.12.2022 16:02.18.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.18.180] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.18.181] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.18.182] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.18.185] [LOG]   Unknown
+[11.12.2022 16:02.19.181] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.19.183] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.19.184] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.19.186] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.19.189] [LOG]   Unknown
+[11.12.2022 16:02.20.177] [LOG]   Unknown
+[11.12.2022 16:02.20.179] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.20.180] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.20.181] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.20.182] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.21.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.21.179] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.21.181] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.21.182] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.21.185] [LOG]   Unknown
+[11.12.2022 16:02.22.179] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.22.181] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.22.182] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.22.183] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.22.185] [LOG]   Unknown
+[11.12.2022 16:02.23.177] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.23.178] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.23.178] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.23.179] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.23.180] [LOG]   Unknown
+[11.12.2022 16:02.24.179] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.24.181] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.24.182] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.24.183] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.24.185] [LOG]   Unknown
+[11.12.2022 16:02.25.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.25.183] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.25.185] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.25.187] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.25.190] [LOG]   Unknown
+[11.12.2022 16:02.26.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.26.180] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.26.181] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.26.182] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.26.185] [LOG]   Unknown
+[11.12.2022 16:02.27.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.27.180] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.27.182] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.27.184] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.27.186] [LOG]   Unknown
+[11.12.2022 16:02.28.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.28.180] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.28.182] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.28.184] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.28.186] [LOG]   Unknown
+[11.12.2022 16:02.29.176] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.29.177] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.29.178] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.29.179] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.29.180] [LOG]   Unknown
+[11.12.2022 16:02.30.179] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.30.182] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.30.184] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.30.186] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.30.192] [LOG]   Unknown
+[11.12.2022 16:02.31.177] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.31.178] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.31.179] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.31.180] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.31.181] [LOG]   Unknown
+[11.12.2022 16:02.32.179] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.32.180] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.32.182] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.32.183] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.32.195] [LOG]   Unknown
+[11.12.2022 16:02.33.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.33.179] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.33.180] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.33.181] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.33.182] [LOG]   Unknown
+[11.12.2022 16:02.34.177] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.34.179] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.34.179] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.34.180] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.34.182] [LOG]   Unknown
+[11.12.2022 16:02.35.177] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.35.182] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.35.183] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.35.184] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.35.188] [LOG]   Unknown
+[11.12.2022 16:02.36.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.36.179] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.36.180] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.36.181] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.36.185] [LOG]   Unknown
+[11.12.2022 16:02.37.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.37.180] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.37.181] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.37.182] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.37.185] [LOG]   Unknown
+[11.12.2022 16:02.38.179] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.38.181] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.38.182] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.38.183] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.38.185] [LOG]   Unknown
+[11.12.2022 16:02.39.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.39.179] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.39.180] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.39.182] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.39.185] [LOG]   Unknown
+[11.12.2022 16:02.40.188] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.40.191] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.40.192] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.40.193] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.40.225] [LOG]   Unknown
+[11.12.2022 16:02.41.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.41.180] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.41.181] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.41.182] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.41.186] [LOG]   Unknown
+[11.12.2022 16:02.42.626] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.42.627] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.42.628] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.42.631] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.42.646] [LOG]   Unknown
+[11.12.2022 16:02.43.209] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.43.210] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.43.211] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.43.212] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.43.218] [LOG]   Unknown
+[11.12.2022 16:02.44.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.44.179] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.44.181] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.44.183] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.44.187] [LOG]   Unknown
+[11.12.2022 16:02.45.177] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.45.178] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.45.179] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.45.179] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.45.182] [LOG]   Unknown
+[11.12.2022 16:02.46.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.46.180] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.46.181] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.46.182] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.46.184] [LOG]   Unknown
+[11.12.2022 16:02.47.177] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.47.178] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.47.179] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.47.179] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.47.180] [LOG]   Unknown
+[11.12.2022 16:02.48.178] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.48.180] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.48.181] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.48.182] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.48.184] [LOG]   Unknown
+[11.12.2022 16:02.49.176] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.49.178] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.49.178] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.49.179] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.49.180] [LOG]   Unknown
+[11.12.2022 16:02.50.179] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.50.180] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.50.182] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.50.183] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.50.186] [LOG]   Unknown
+[11.12.2022 16:02.51.179] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.51.181] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.51.182] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.51.184] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.51.187] [LOG]   Unknown
+[11.12.2022 16:02.52.181] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.52.182] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.52.185] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.52.188] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.52.193] [LOG]   Unknown
+[11.12.2022 16:02.53.179] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.53.181] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.53.182] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.53.183] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.53.187] [LOG]   Unknown
+[11.12.2022 16:02.55.361] [LOG]   Use existing calendarfetcher for url: http://www.calendarlabs.com/ical-calendar/ics/76/US_Holidays.ics
+[11.12.2022 16:02.55.362] [INFO]  Calendar-Fetcher: Broadcasting 17 events.
+[11.12.2022 16:02.55.368] [LOG]   Use existing newsfetcher for url: https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml
+[11.12.2022 16:02.55.369] [INFO]  Newsfeed-Fetcher: Broadcasting 25 items.
+[11.12.2022 16:02.55.698] [INFO]  Calendar-Fetcher: Broadcasting 17 events.
+[11.12.2022 16:02.55.709] [INFO]  Newsfeed-Fetcher: Broadcasting 25 items.
+[11.12.2022 16:02.56.299] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.56.303] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.56.305] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.56.306] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.56.308] [LOG]   Unknown
+[11.12.2022 16:02.57.295] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.57.297] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.57.298] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.57.298] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.57.301] [LOG]   Unknown
+[11.12.2022 16:02.58.296] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.58.297] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.58.298] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.58.298] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.58.300] [LOG]   Unknown
+[11.12.2022 16:02.59.298] [ERROR] Whoops! There was an uncaught exception...
+[11.12.2022 16:02.59.301] [ERROR] TypeError: Cannot read properties of undefined (reading 'split')
+    at /home/pi/MagicMirror/modules/MMM-Face-Recognition-SMAI/node_helper.js:35:39
+    at FSReqCallback.oncomplete (node:fs:188:23)
+[11.12.2022 16:02.59.303] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?
+[11.12.2022 16:02.59.304] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MichMich/MagicMirror/issues
+[11.12.2022 16:02.59.311] [LOG]   Unknown
+[11.12.2022 16:03.00.109] [LOG]   Shutting down server...
+[11.12.2022 16:03.00.110] [LOG]   Stopping module helper: updatenotification
+[11.12.2022 16:03.00.111] [LOG]   Stopping module helper: calendar
+[11.12.2022 16:03.00.111] [LOG]   Stopping module helper: newsfeed
+[11.12.2022 16:03.00.112] [LOG]   Stopping module helper: MMM-Face-Recognition-SMAI
